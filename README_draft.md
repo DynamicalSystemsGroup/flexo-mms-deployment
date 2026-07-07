@@ -56,8 +56,27 @@ The goal of this draft README is to make the repository friendlier for first-tim
 
 ## Quickstart
 
+The current Docker Compose stack can be started from the `docker-compose/` directory:
+
+```sh
+cd docker-compose
+docker compose up -d
+curl -u user01:password1 http://localhost:8082/login
+```
+
+The stack starts:
+
+- OpenLDAP
+- Apache Fuseki
+- MinIO
+- Flexo MMS Auth Service
+- Flexo MMS Store Service
+- Flexo MMS Layer 1 Service
+
+### Proposed contributor helper
+
 > [!NOTE]
-> This is a proposed contributor experience. The `demo` helper and thermostat seed model are planned additions, not current repository behavior.
+> This is a proposed contributor experience. The `demo` helper, SysML v2 service wiring, and thermostat seed model are planned additions, not current repository behavior.
 
 ```sh
 git clone https://github.com/Open-MBEE/flexo-mms-deployment.git
